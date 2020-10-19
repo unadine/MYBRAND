@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Poppins;
+  }
+  body{
+    font-size:medium;
+    line-height: 1.2;
+    background: #2D3945;
+    color:white;
+  }
+ 
+  h1, .wrap{
+      display: flex;
+      flex-flow: row wrap;
+      align-self: center;
+      width: 100%;
+  }
+  h1{
+    margin-left:100px;
+  }
+  .nav-links {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color:#FFE4B5;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .nav-links a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .nav-links img{
+    margin: 23px;
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.2rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 100% !important;
+  }
+   
+  .nav-links  a:focus,a:hover,a:active {
+    color: #1E90FF;
+  }
+  div.home {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  section .home-section {
+    display: flex;
+    border-bottom: 0.02px solid white;
+  }
+  .container{
+    width:80%;
+    overflow:hidden;
+    margin:auto;
+    text-align: center;
+  }
+  .home{
+    display:flex;
+    flex:3;
+    flex-flow:column;
+  }
+  
+  #home h1{
+    margin-top: 200px;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: Poppins;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #home p{
+    font-size: large;   
+    font-weight: 300;
+    font-family: Poppins;
+  }
+  input[type=submit]{
+    width: 10%;
+    background-color: #1E90FF;
+    color:black;
+    font-weight: 900;
+    margin: 50px 50px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border:0.02px solid black;
+  }
+  input[value=Welcome]{
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 700px) {
+    .nav-links{
+      width: 154%;
+      height: auto;
+      position: relative;
+      top:0px;
+      background-color:#FFE4B5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+    }
+    .nav-links a {
+      float: none;
+    }
+    div.home {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .nav-links a {
+      text-align: center;
+      float: none;
+    }
+  }
