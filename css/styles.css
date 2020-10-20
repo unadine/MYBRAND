@@ -1,123 +1,144 @@
 *{
-    padding:0;
-    margin:0;
-    font-family: Poppins;
-  }
-  body{
-    font-size:medium;
-    line-height: 1.2;
-    background: #2D3945;
-    color:white;
-  }
+  padding:0;
+  margin:0;
+  font-family: Poppins;
+}
+body{
+  font-size:medium;
+  line-height: 1.2;
+  background: #2D3945;
+  color:white;
+}
+.nav-links {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color:#FFE4B5;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.nav-links a, .side a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.side a{
+  color:white;
+}
+.nav-links img{
+  margin: 23px;
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 100% !important;
+}
  
-  h1, .wrap{
-      display: flex;
-      flex-flow: row wrap;
-      align-self: center;
-      width: 100%;
+.nav-links  a:focus,a:hover,a:active {
+  color: #1E90FF;
+}
+.home {
+  margin-left: 300px;
+  padding: 20% 0;
+  height: 100%;
+  text-align: center;
+  border-bottom: 0.02px solid white;
+}
+.side {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.side .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  color: white;
+  font-size: 50px;
+}
+.nav {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+ input[type=submit]{
+  width: 10%;
+  background-color: #1E90FF;
+  color:black;
+  font-weight: 900;
+  margin: 40px 50px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border:0.02px solid black;
+}
+.home h1{
+  font-size: 50px;
+  text-transform: capitalize;
+  font-family: Poppins;
+  margin-bottom: 20px;
+} 
+.home p{
+  font-size: large;   
+  font-weight: 300;
+  font-family: Poppins;
+} 
+@media screen and (max-width: 700px) {
+  .sidebar  {
+    display:none;
+    width:0;
   }
-  h1{
-    margin-left:100px;
+  .home{
+    margin-left:0;
+    background-color: #2D3945;
+    border-bottom: 0.02px solid white;
   }
-  .nav-links {
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    background-color:#FFE4B5;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  .line1,.line2,.line3{
+    display:block; 
+    background-color:white;
+    width:20px;
+    height: 3px;
+    margin: 5px;
   }
-  
-  .nav-links a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+  .lines{
+float: right;
+cursor: pointer;
   }
-  .nav-links img{
-    margin: 23px;
-    max-width: 10rem;
-    max-height: 10rem;
+  input[type=submit]{
+     width:20%;  
+  }
+  .home h1{
+  font-size:35px;
+  }
+  .home p{
+    font-size:15px; 
+  }
+  .nav img{
+    margin: 2px;
+    max-width: 5rem;
+    max-height: 5rem;
     border: 0.2rem solid rgba(255, 255, 255, 0.2);
     border-radius: 100% !important;
   }
-   
-  .nav-links  a:focus,a:hover,a:active {
+  .nav {
+    position: relative;
+    top: 10%;
+  }
+  .nav  a:focus,a:hover,a:active {
     color: #1E90FF;
   }
-  div.home {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  section .home-section {
-    display: flex;
-    border-bottom: 0.02px solid white;
-  }
-  .container{
-    width:80%;
-    overflow:hidden;
-    margin:auto;
-    text-align: center;
-  }
-  .home{
-    display:flex;
-    flex:3;
-    flex-flow:column;
-  }
-  
-  #home h1{
-    margin-top: 200px;
-    font-size: 50px;
-    text-transform: capitalize;
-    font-family: Poppins;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  #home p{
-    font-size: large;   
-    font-weight: 300;
-    font-family: Poppins;
-  }
-  input[type=submit]{
-    width: 10%;
-    background-color: #1E90FF;
-    color:black;
-    font-weight: 900;
-    margin: 50px 50px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    border:0.02px solid black;
-  }
-  input[value=Welcome]{
-    margin-bottom: 20px;
-  }
-  @media screen and (max-width: 700px) {
-    .nav-links{
-      width: 154%;
-      height: auto;
-      position: relative;
-      top:0px;
-      background-color:#FFE4B5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      list-style: none;
-    }
-    .nav-links a {
-      float: none;
-    }
-    div.home {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .nav-links a {
-      text-align: center;
-      float: none;
-    }
-  }
+}
