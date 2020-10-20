@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <!-- <script src="js/scripts.js"></script>  -->
+  <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrap">
+      <nav class="sidebar">
+      <ul class="nav-links" id="navigation">
+          <div class="logo"><a class="memoji" href="#home"><img src="img/memoji.jpg" alt="memoji"> </a></div>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#blog">Blogs</a></li>
+          <li><a href="#contact">Contacts</a></li>
+      </ul>
+       </nav>
+       <nav class="side" id="navigate">
+        <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
+        <ul class="nav" >
+          <div class="logo"><a class="memoji" href="#home"><img src="img/memoji.jpg" alt="memoji"> </a></div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+         </nav>
+       <div class="lines" id="open" onclick="openNav()" >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+       <div class="home">
+                <h1>Hi,<br>My name is Umutesi Nadine</h1>
+                <p><em>A full stack web developer & software engineer</em></p>
+                <input type="submit" value="Welcome">
+        </div>
+      </div>
+      <!-- <script>
+//         document.getElementById("open").addEventListener("click", () =>{
+//         document.getElementById("navigate").style.width = "100%";
+//         document.getElementById("navigate").style.height = "100%";}
+// );     
+        document.getElementById("close").addEventListener("click",() =>{
+        document.getElementById("navigate").style.width = "0";
+});
+        </script> -->
+        <script src="js/scripts.js"></script> 
+</body>
+</html>
