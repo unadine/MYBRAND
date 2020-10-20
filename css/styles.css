@@ -11,18 +11,19 @@ body{
 }
 .nav-links {
   margin: 0;
-  padding: 0;
+  padding:10% 0;
   width: 300px;
   background-color:#FFE4B5;
   position: fixed;
   height: 100%;
   overflow: auto;
+
 }
 
 .nav-links a, .side a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 10px ;
   text-align: center;
   justify-content: center;
   text-decoration: none;
