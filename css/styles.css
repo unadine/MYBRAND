@@ -173,3 +173,13 @@ cursor: pointer;
   margin-left: 0;
   }
 }
+@media screen and (max-width: 1200px){
+  input[type=submit]{
+    width:25%;  
+ }
+}
+@media screen and (max-width: 290px){
+  input[type=submit]{
+    width:30%;  
+ }
+}
