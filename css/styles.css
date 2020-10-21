@@ -244,6 +244,7 @@ cursor: pointer;
 @media screen and (max-width: 700px) {
   .skills{
   margin-left: 0;
+  padding:10px 0;
   }
   .row{
     padding:0;
