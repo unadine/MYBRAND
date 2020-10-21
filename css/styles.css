@@ -122,10 +122,10 @@ cursor: pointer;
      width:25%;  
   }
   .home h1{
-  font-size:35px;
+  font-size:25px;
   }
   .home p{
-    font-size:15px; 
+    font-size:10px; 
   }
   .nav img{
     margin: 2px;
@@ -172,11 +172,18 @@ cursor: pointer;
   .about{
   margin-left: 0;
   }
+  .about h1{
+    font-size:25px;
+    }
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
   input[type=submit]{
     width:25%;  
  }
+ .about h1{
+  font-size:25px;
+  }
+}
 }
 @media screen and (max-width: 290px){
   input[type=submit]{
