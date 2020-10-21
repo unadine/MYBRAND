@@ -142,11 +142,12 @@ cursor: pointer;
     color: #1E90FF;
   }
 }
-/* about */
+/* about */ 
 .about{
   height:100%;
   margin-left:300px;
   border-bottom: 0.02px solid white;
+  padding:4% 0;
 }
 #about,#education{
   padding:7%;
@@ -172,4 +173,3 @@ cursor: pointer;
   margin-left: 0;
   }
 }
-
