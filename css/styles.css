@@ -145,7 +145,7 @@ cursor: pointer;
 /* about */
 .about{
   height:100%;
-  margin-left: 20%;
+  margin-left:300px;
   border-bottom: 0.02px solid white;
 }
 #about,#education{
