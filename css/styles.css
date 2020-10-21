@@ -9,6 +9,7 @@ body{
   background: #2D3945;
   color:white;
 }
+/* navigation */
 .nav-links {
   margin: 0;
   padding:10% 0;
@@ -17,9 +18,7 @@ body{
   position: fixed;
   height: 100%;
   overflow: auto;
-
 }
-
 .nav-links a, .side a {
   display: block;
   color: black;
@@ -120,13 +119,13 @@ float: right;
 cursor: pointer;
   }
   input[type=submit]{
-     width:20%;  
+     width:25%;  
   }
   .home h1{
-  font-size:35px;
+  font-size:25px;
   }
   .home p{
-    font-size:15px; 
+    font-size:10px; 
   }
   .nav img{
     margin: 2px;
@@ -142,4 +141,52 @@ cursor: pointer;
   .nav  a:focus,a:hover,a:active {
     color: #1E90FF;
   }
+}
+/* about */ 
+.about{
+  height:100%;
+  margin-left:300px;
+  border-bottom: 0.02px solid white;
+  padding:4% 0;
+}
+#about,#education{
+  padding:7%;
+}
+
+#about h1,#education h1{
+  padding-bottom: 3%;
+} 
+#auca h4{
+  margin-bottom:5%;
+} 
+#about,#education{
+  text-align: center;
+  color:white;
+  font-size: larger;
+
+}
+#about h5,#education h5{
+  color:#1E90FF; 
+}
+@media screen and (max-width: 700px) {
+  .about{
+  margin-left: 0;
+  }
+  .about h1{
+    font-size:25px;
+    }
+}
+@media screen and (max-width: 1300px){
+  input[type=submit]{
+    width:25%;  
+ }
+ .about h1{
+  font-size:25px;
+  }
+}
+}
+@media screen and (max-width: 290px){
+  input[type=submit]{
+    width:30%;  
+ }
 }
