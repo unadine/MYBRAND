@@ -175,6 +175,9 @@ cursor: pointer;
   .about h1{
     font-size:25px;
     }
+    .about p{
+      font-size:15px;
+    }
 }
 @media screen and (max-width: 1300px){
   input[type=submit]{
@@ -184,9 +187,91 @@ cursor: pointer;
   font-size:25px;
   }
 }
-}
 @media screen and (max-width: 290px){
   input[type=submit]{
     width:30%;  
  }
+}
+/************skills***************/
+ .skills{ 
+  margin-left:300px;
+  text-align: center;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  padding:5%;
+  justify-content: space-between;
+  border-bottom: 0.02px solid white;
+}
+.border{
+  display: flex;
+  border-radius: 3%;
+  text-align: center;
+  padding-bottom: 60%;
+  width: 100%;
+  padding: 50px 70px;
+  margin-bottom: 34px;
+}
+.border .img{
+  flex: 1;
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center ;
+}
+
+.skills h1{
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+.article img{
+  width:200px;
+  height:200px;
+  margin-bottom: 30px;
+}
+.border h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: #1E90FF;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2em 0 0 0;
+}
+.border p{
+  font-size: larger;
+}
+@media screen and (max-width: 700px) {
+  .skills{
+  margin-left: 0;
+  }
+  .row{
+    padding:0;
+    flex-direction: column;
+  }
+  .border{
+    padding:0;
+  }
+  .border h3{
+    font-size: 12px;
+  }
+  .border p{
+    font-size:15px;
+    padding:0px 20px;
+  }
+  .skills h1{
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
+    .row{
+      flex-direction: column;
+    }
+    .border p{
+      font-size:medium;
+      padding:0px 5px;
+    } 
+    .border{
+      padding:0;
+    }
 }
