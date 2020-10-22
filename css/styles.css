@@ -202,7 +202,7 @@ cursor: pointer;
 .row{
   display: flex;
   flex-direction: row;
-  padding:0 5%;
+  padding:5%;
   justify-content: space-between;
 }
 .border{
