@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <title>Blog</title>
+    <style>
+      body{
+        padding: 0;
+        margin: 0;
+      }
+      header{
+    background-image: url('img/google-pixel-5-pixel-4a-5g-event-release-date-1200x675.jpg');
+     background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width:100%;
+    text-align: center;
+    padding-top: 250px;
+  } 
+  header h1{
+    margin-top: 300px;
+    text-align: center;
+    color:black;
+    background-color: rgba(255,255,255,0.5); 
+  }
+      .pixel{
+        text-align: left;
+        padding: 0 15%;
+      }
+      .rows img{
+        width: 80%;
+        height:40%
+      }
+      .rows{
+  display: flex;
+  flex-direction: row;
+  /* padding:5%; */
+  padding: 0 15%;
+  justify-content: space-between;
+}
+.pixel h1{
+  text-align: center;
+}
+.article p,.article h3{
+  text-align: center;
+  width: 80%;
+}
+h2{
+  text-align: center;
+}
+#blogger{
+  text-align: center;
+}
+textarea{
+  width: 50%;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.container-like{
+  position: relative;
+  background-color: brown;
+
+}
+
+.text-block-like{
+  position: absolute;
+  left:0;
+  top: -1;
+  /* bottom: 20px;
+  right: 20px; */
+  /* background-color: black; */
+  color: black;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+footer{
+    padding:20px;
+    text-align: center;
+    background-color: grey;
+  }
+  @media screen and (max-width: 700px){
+      header h1{
+          margin-top:0;
+          font-size: 30px;
+      }
+    .rows{
+    flex-direction: column;
+  }
+  .pixel{
+    padding: 0;
+  }
+  .article p,.article h3{
+  width: 100%;
+}
+.rows img{
+        width: 100%;
+      }
+  }
+  @media screen and (min-width: 700px){
+     .rows{
+         padding: 0;
+     }
+ 
+  }
+    </style>
+</head>
+<body>
+  <header>
+    <h1> Pixel 5 vs. Pixel 4A 5G: <br>Spec-by-spec comparison of Google's 2020 phones</h1>
+  </header>
+  <section class="pixel">
+    <!-- <h1>Google Pixel 5 vs Pixel 4a 5G vs Pixel 4a: Which should you buy?</h1> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
+    </p>
+    <!-- <img src="img/heart-regular.svg" alt="love" style="width:3%;height:3%;"> -->
+    <i class="fa fa-heart-o" ></i>
+          <span style="margin-right:10px;">2</span>
+          <i class="fa fa-comment-o"></i>
+            <span>2</span>
+    <div id="blogger">
+      <div class="comment" id="comment">
+      <h2>Leave a comment</h2>
+      <form>
+        <textarea id="message" name="message" placeholder="Your message here..."required></textarea></br>
+         <input type="submit" value="Post">
+      </form>
+    </div> 
+  </div>
+  </section>
+  <section>
+    <h2>Check out these other blogs</h2>
+    <div class="rows">
+        <div class="article" >
+        <img src="img/BoostIQ RoboVac 11S (Slim).jpeg" alt="robot">
+        <h3>Best robot vacuum for 2020: Neato, iRobot Roomba, Electrolux, Eufy and more</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.</p>
+        <!-- <img src="img/heart-regular.svg" alt="love" style="width:7%;height:7%;"> -->
+        <!-- <img src="img/icons8-commentaires-24 (1).png" alt="comment" style="width:7%;height:5%;margin-bottom: 5px;"> -->
+       
+          <i class="fa fa-heart-o" ></i>
+          <span style="margin-right:10px;">2</span>
+          <i class="fa fa-comment-o"></i>
+            <span>2</span>
+         
+        </div>
+       
+      
+       
+          <div class="article">
+          <img src="img/New iPhone 12 Range Tipped To Be Cheaper Than iPhone 11 Models.jpeg" alt="iphone12">
+          <h3>iPhone 12 deals highlight a renewed battle between wireless carriers</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.</p>
+          <!-- <img src="img/heart-regular.svg" alt="like" style="width:7%;height:7%;"> -->
+        <!-- <img src="img/icons8-commentaires-24 (1).png" alt="comment" style="width:7%;height:5%;margin-bottom: 5px;"> -->
+        <i class="fa fa-heart-o" ></i>
+          <span style="margin-right:10px;">2</span>
+          <i class="fa fa-comment-o"></i>
+            <span>2</span>
+          </div>
+        
+          <div class="article">
+            <img src="img/High definition Newly taken shots by NASA Mountain Olympus Mons on Mars, its twice as tall as Mount Everest.jpeg" alt="spaceX">
+          <h3>Elon Musk 'guesses' SpaceX could send a ship to Mars as soon as 2024</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.</p>
+          <!-- <img src="img/heart-regular.svg" alt="like" style="width:7%;height:7%;"> -->
+        <!-- <img src="img/icons8-commentaires-24 (1).png" alt="comment" style="width:7%;height:5%;margin-bottom: 5px;"> -->
+        <i class="fa fa-heart-o" ></i>
+          <span style="margin-right:10px;">2</span>
+          <i class="fa fa-comment-o"></i>
+            <span>2</span>
+          </div> 
+    </div>
+  </section>
+    <footer>
+      <img src="img/skype.png">
+              <img src="img/twitter.png">
+              <img src="img/facebook.png">
+              <img src="img/flickr.png"><br><br>
+              <h3>Blogs <br> 2019 </h3>
+    </footer>
+</body>
+</html>
