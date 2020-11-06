@@ -279,3 +279,47 @@ cursor: pointer;
       padding:0;
     }
 }
+/******************contact page ************/
+.contact{
+  margin-left:300px;
+  text-align: center;
+  padding:10% 0;
+}
+::placeholder {
+  color: gainsboro;
+  font-weight: bold;
+  font-size: medium;
+}
+.subscription h3{
+  color:#1E90FF; 
+}
+#contact h1{
+  margin-bottom: 2%;
+}
+#contact p{
+  font-size: medium; 
+}
+input[type=text],input[type=email],textarea{
+  width: 50%;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background: #2D3945;
+}
+@media screen and (max-width: 700px) {
+  .contact{
+    margin-left: 0;
+    padding:0;
+  }
+  #contact h1{
+    margin-top: 20px;
+  }
+  input[type=text],input[type=email],textarea{
+    margin:0;
+  } 
+  ::placeholder {
+    font-size: small;
+  }
+
+}
