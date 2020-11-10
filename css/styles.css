@@ -114,6 +114,10 @@ body{
     height: 3px;
     margin: 5px;
   }
+  .modal button{
+    width:25%;
+    padding:5px 5px;
+  }
   .lines{
 float: right;
 cursor: pointer;
@@ -142,6 +146,103 @@ cursor: pointer;
     color: #1E90FF;
   }
 }
+/* sign in */
+button {
+  background-color: #33b5e5;
+  color: black;
+  padding: 14px 20px;
+  font-weight: bold;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  width: 10%;
+}
+
+.signin button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.memoji {
+  margin: 23px;
+  max-width: 10rem;
+  max-height: 10rem;
+  border:2px solid black;
+  border-radius: 100% !important;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  color:black;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%; 
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 700px) {
+  
+}
+
 /* about */ 
 .about{
   height:100%;
@@ -323,3 +424,27 @@ input[type=text],input[type=email],textarea{
   }
 
 }
+/******************list ya message*/
+.brand{
+    /* background: #fff; */
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    /* border-radius: 10px 120px 10px 10px; */
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.brand ul{
+  list-style-type: none;
+  padding: 0;
+}
+.brand ul li{
+  padding: 20px;
+  /* padding-bottom: 50px; */
+  background: #f6f6f6;
+  font-size: 20px;
+  color: #555;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  height: auto;
+}
+

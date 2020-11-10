@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
     <link href="css/queries.css" rel="stylesheet" type="text/css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
 </head>
 <body>
 
@@ -16,7 +19,7 @@
         <ul class="nav-links" id="navigation">
             <div class="logo"><a class="memoji" href="#home"><img src="img/memoji.jpg" alt="memoji"> </a></div>
             <li><a href="create.html">Create blog</a></li>
-            <li><a href="admin.html">Manage blog</a></li>
+            <li><a href="manage.html">Manage blog</a></li>
             <li><a href="queries.html">Messages/queries</a></li>
             <li><a href="index.html">Logout</a></li>
         </ul>
@@ -24,7 +27,12 @@
    <div class="admin-content">
        <div class="content">
            <h2 class="page-title">Messages/Queries</h2>  
+           <div class="brand">
+            <ul id="message-list"></ul>
+            </div>
        </div>
-   </div>               
+   </div>
+   <script src="../js/configure.js"></script> 
+   <script src="../js//contactdata.js"></script>                
 </body>
 </html>

@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-   <!-- <script src="js/scripts.js"></script>  -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
   <title>Portfolio</title>
+
 </head>
 <body>
     <div class="wrap">
@@ -18,8 +21,26 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="#contact">Contacts</a></li>
+          <button onclick="document.getElementById('signin').style.display='block'" style="width:auto;background-color: #33b5e5; font-weight: 900;border-radius: 10px;cursor:pointer;margin-left:115px;">Signin</button>
       </ul>
        </nav>
+       <div id="signin" class="modal">
+        <form class="modal-content animate" id="signform" action="">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('signin').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="img/memoji.jpg" alt="memoji" class="memoji">
+          </div>
+          <div class="container">
+            <label for="uname" style="color:black;"><b>Username :</b></label><br>
+            <input type="text" id="signusername"placeholder="Enter Username" style=" width: 50%;margin-bottom: 15px; border: 1px solid #ccc; padding: 12px 20px;background-color: transparent;color: black;" name="uname" required><br>
+      
+            <label for="psw" style="color:black;"><b>Password :</b></label><br>
+            <input type="password" id="signpassword" placeholder="Enter Password" style=" width: 50%;margin-bottom: 15px; border: 1px solid #ccc; padding: 12px 20px;background-color: transparent;" name="psw" required><br>
+              
+            <button type="submit" id="submit" href="Admin/create.html">SignIn</button>
+          </div>
+        </form>
+      </div>
        <nav class="side" id="navigate">
         <a href="javascript:void(0)" class="closebtn" id="close" onclick="closeNav()">&times;</a>
         <ul class="nav" >
@@ -29,6 +50,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#blog">Blogs</a></li>
             <li><a href="#contact">Contacts</a></li>
+            <button onclick="document.getElementById('signin').style.display='block'" style="width:auto;background-color: #33b5e5; font-weight: 900;border-radius: 10px;cursor:pointer;margin-left:0;">Signin</button>
         </ul>
          </nav>
        <div class="lines" id="open" onclick="openNav()" >
@@ -77,22 +99,32 @@
       <section class="contact" id="contact">
         <h1>CONTACTS</h1>
       <p>&#128075;Hello. Let's get in touch</p><br><br>
-      <form id="form">
-        <input id="username" type="text" placeholder="Name..."required><br>
-        <input id="email"  type="text" placeholder="Email..."required>  <br>
-        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..."required></textarea>
-         <br>
+      <form id="form" name="myform" >
+        <input id="name" type="text" name="name" placeholder="Name..."required><br>
+        <span id="error"></span><br>
+        <input id="email"  type="text" name="email" placeholder="Email..."required >  <br>
+        <span id="error1"></span><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..."required></textarea><br>
+        <span id="error2"></span>
+        <br>
          <input type="submit" value="Submit">
       </form>
+       <!-- <div class="brand">
+         <h2>Messages</h2>
+        <ul id="message-list"></ul>
+        </div>  -->
       <div class="subscription">
         <h3>Subscribe to my newsletter</h3><br>
-        <form>
-        <input id="email" type="text" placeholder="Enter Email Address"required><br>
+        <form id="secondform"> 
+        <input id="secondemail" type="text" name="email" placeholder="Enter Email Address"required><br>
+        <span id="error3"></span><br>
         <input type="submit" value="Subscribe">
         </form>
       </div>  
     </section>
-
         <script src="js/scripts.js"></script> 
+        <script src="js/configure.js"></script> 
+        <script src="js/contactdata.js"></script> 
+
 </body>
 </html>
