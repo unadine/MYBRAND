@@ -24,7 +24,7 @@ function renderArticle(doc){
                 db.collection('articles').doc(id).delete(); 
                
             } else {
-                window.localStorage.href="dashboard.html"
+                window.localStorage.href="create.html"
             }
             //  location.reload()
    })

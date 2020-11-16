@@ -12,6 +12,7 @@
           };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
-          const auth= firebase.auth();
+        
           const db= firebase.firestore();
-          db.settings = ({timestampsInSnapshots:true});
+          const auth= firebase.auth();
+          db.settings ({timestampsInSnapshots:true});

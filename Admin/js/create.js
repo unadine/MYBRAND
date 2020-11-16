@@ -6,24 +6,7 @@ form.addEventListener('submit', (e)=>{
   
   })
 
-  //save article
-  // form.addEventListener('submit', (e)=>{
-  //       e.preventDefault();
-       
-  //         db.collection('articles').add({
-  //           content: form.content.value,
-  //           picture:'',
-  //           summary: form.summary.value,
-  //           title: form.title.value
-  //       })
-  //       form.title.value='';
-  //       form.summary.value='';
-  //       form.content.value='';
-  //       })
-     
-
-  
-  
+ //////////////////////////////////////////////////////////////////////////////
   function uploadImage(){
     //get image
     const image = document.querySelector('#pic').files[0];
@@ -62,3 +45,4 @@ form.addEventListener('submit', (e)=>{
       
     });   
 };
+///////////////////////////////////////////////////////////////////////

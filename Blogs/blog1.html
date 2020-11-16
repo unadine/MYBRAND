@@ -12,28 +12,41 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
 </head>
 <body>
-  <header>
-    <h1> iPhone 12 deals highlight a renewed battle between wireless carriers</h1>
-  </header>
-  <section class="pixel">
-    <!-- <h1>Google Pixel 5 vs Pixel 4a 5G vs Pixel 4a: Which should you buy?</h1> -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, minus illum unde ullam esse incidunt at quibusdam officia doloremque velit consectetur quas, voluptatum itaque, quis autem vel iusto. Qui, cupiditate.
-    </p>
-    <!-- <img src="img/heart-regular.svg" alt="love" style="width:3%;height:3%;"> -->
-    <i class="fa fa-heart-o" ></i>
-          <span style="margin-right:10px;">2</span>
-          <i class="fa fa-comment-o"></i>
-            <span>2</span>
+<nav>
+  <div class="logo">
+    <h4>blogs</h4>
+  </div>
+  <ul class="blognav-links">
+    <li>
+      <a href="../index.html">Home</a>
+    </li>
+    <li>
+      <a href="../index.html#contact">Contact</a>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
+<div class="row" >
+  <div class="column col-1" >
+  </div>
+<div class="column col-2">
+  <div class="blog-article">
+       <div id="retrieve-article">
+          
+        </div>
+  </div>
+</div>
+
+<div class="column col-3">
+</div>
+</div>
+
+
+  <!-- <section class="pixel">
     <div id="blogger">
       <div class="comment" id="comment">
       <h2>Leave a comment</h2>
@@ -41,7 +54,7 @@
         <input type="text" name="name" placeholder="Name..."required><br>
         <textarea id="comment" name="comment" placeholder="Your comment here..."required></textarea></br>
          <input type="submit" value="Post"><br><br>
-         <!-- <button>Submit</button> -->
+        
       </form>
     </div> 
   </div>
@@ -49,7 +62,7 @@
     <h2>Comments </h2>
     <ul id="message-list1"></ul>
     </div>
-  </section>
+  </section> -->
  
     <footer>
       <img src="img/skype.png">
@@ -58,7 +71,26 @@
               <img src="img/flickr.png"><br><br>
               <h3>Blogs <br> 2019 </h3>
     </footer>
-    <script src="../js/configure.js"></script> 
+    <script>
+       // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyC066OV8Sa9h7sbEQh8FVi9fcR3D3-al7E",
+            authDomain: "mybrand-d5cdf.firebaseapp.com",
+            databaseURL: "https://mybrand-d5cdf.firebaseio.com",
+            projectId: "mybrand-d5cdf",
+            storageBucket: "mybrand-d5cdf.appspot.com",
+            messagingSenderId: "735253465583",
+            appId: "1:735253465583:web:a1bde314f8da04c017ce1a",
+            measurementId: "G-8GSR3TPZGL"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        
+          const db= firebase.firestore();
+          const auth= firebase.auth();
+          db.settings ({timestampsInSnapshots:true});
+    </script>
     <script src="js/blogs1.js"></script> 
 </body>
 </html>
