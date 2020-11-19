@@ -35,14 +35,3 @@ signinForm.addEventListener('click', (e)=>{
      });
 })
 }
-
-
-// const logout = document.querySelector('#logout');
-// if(logout){
-//   logout.addEventListener('click', (e)=>{
-//     e.preventDefault()
-//     auth.signOut().then(()=>{
-//       window.location.href="signin.html";
-//     })
-// })
-// }

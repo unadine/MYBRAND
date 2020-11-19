@@ -13,13 +13,6 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-// log in
-// const modal = document.getElementById('modal-login');
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
 //subscription
 const secondform= document.getElementById('secondform');
 secondform.addEventListener('submit',(e)=>{
