@@ -1,0 +1,148 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #555;
+    font-family: 'Poppins',sans-serif;
+  }
+  .logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  .blognav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  .blognav-links li{
+    list-style: none;
+  } 
+  .blognav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width:25px;
+    height: 3px;
+    background-color:rgb(226,226,226);
+    margin:5px;
+  }
+ @media screen and (max-width:768px){
+   body{
+     overflow-x: hidden;
+   }
+  .blognav-links{
+    position:absolute;
+    right: 0;
+    height: 92vh;
+    top:8vh;
+    display: flex;
+    background-color: #555;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .burger{
+    display: block;
+  }
+ }
+ .nav-active{
+   transform: translateX(0%);
+ }
+
+ footer{
+  padding:20px;
+  text-align: center;
+  background-color: #555;
+  }
+  footer img{
+    width: 50px;;
+    height:50px;
+  }
+
+  /*  output */
+  img{
+    width: 500px;
+    height: 200px;
+}
+
+.column {
+    float: left;
+  }
+  .col-1{
+    width: 30%;
+    padding-top: 110px;
+    line-height: 50px;
+  }
+  .col-2{
+    width: 50%;
+  }
+  .col-3{
+    width: 20%;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: 24px;
+  }
+  ul{
+    list-style-type:none;
+  }
+  .feeds-link{
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media screen and (max-width:768px) {
+    
+    p{
+      font-size: 24px;
+    }
+    img{
+      width: 600px;
+      height: 300px;
+  }
+
+  }
+  @media screen and (max-width:768px){
+    .col-1{
+      padding-top: 60px;
+      line-height: 50px;
+      padding-left: 40px;
+    }
+    .feeds-link{
+      font-size: 18px;
+    }
+  }
+
+
+
+
+

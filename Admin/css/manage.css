@@ -77,3 +77,43 @@ cursor: pointer;
 color: #1E90FF;
 }
 }
+
+#articleTitles{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+#articleTitles li{
+    padding: 10px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 46px;
+   
+}
+
+
+
+#articleTitles li div{
+    position: absolute;
+    top: 0;
+    /* right: 90px; */
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: left;
+    padding: 10px 10px;
+    font-weight:  bold;
+    cursor:  pointer;
+    /* margin-right: 10px; */
+}
+
+#articleTitles li button{
+  padding:7px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: cornflowerblue;
+  text-emphasis: bold;
+  float: right;}

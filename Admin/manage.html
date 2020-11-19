@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
     <!-- <script src="js/scripts.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-storage.js"></script>
+    
     <link href="css/manage.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -15,39 +19,27 @@
         <ul class="nav-links" id="navigation">
             <div class="logo"><a class="memoji"><img src="img/memoji.jpg" alt="memoji"> </a></div>
             <li><a href="create.html">Create blog</a></li>
-            <li><a href="admin.html">Manage blog</a></li>
+            <li><a href="manage.html">Manage blog</a></li>
             <li><a href="queries.html">Messages/queries</a></li>
-            <li><a href="index.html">Logout</a></li>
+            <li><a href="../index.html">Logout</a></li>
         </ul>
          </nav>
    <div class="admin-content">
        <div class="content">
            <h2 class="page-title">Manage Blogs</h2>
            <table>
-               <thead>
-                   <th>SN</th>
-                   <th>Title</th>
-                   <th>Author</th>
-                    <th colspan="3">Action</th>
-               </thead>
-               <tbody>
-                   <tr>
-                       <td>1</td>
-                       <td>This is the first Post</td>
-                       <td>Nadine</td>
-                       <td><i  class="fa fa-trash" id="delete"></i></td>
-                       <td><i class="fa fa-pencil-square-o" id="edit"></i></td>
-                   </tr>
-                   <tr>
-                    <td>2</td>
-                    <td>This is the second Post</td>
-                    <td>Harry</td>
-                    <td><i  class="fa fa-trash" id="delete"></i></td>
-                    <td><i class="fa fa-pencil-square-o" id="edit"></i></td>
-                </tr>
+              
+               <tbody id="tbody"> 
+                   <tr class="row">
+                          <ul id="articleTitles"></ul>
+                          
+                      </tr>
                </tbody>
            </table>
        </div>
-   </div>               
+   </div>  
+   <script src="../js/configure.js"></script>     
+   <script src="js/manage.js"></script> 
+         
 </body>
 </html>

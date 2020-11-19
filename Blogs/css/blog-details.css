@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+  }
+   h1{
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+  }
+   p{
+      margin:0 60px;
+      font-weight: 500;    
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #555;
+    font-family: 'Poppins',sans-serif;
+  }
+  .logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+  .blognav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  .blognav-links li{
+    list-style: none;
+  } 
+  .blognav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width:25px;
+    height: 3px;
+    background-color:rgb(226,226,226);
+    margin:5px;
+  }
+img{
+    width:100%;
+    height:20%;
+}
+.add-comment{
+    text-align: center;
+}
+
+
+textarea, input[type=text]{
+    width: 50%;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    }
+    .container-like{
+    position: relative;
+    background-color: brown;
+    
+    }
+    
+    .text-block-like{
+    position: absolute;
+    left:0;
+    top: -1;
+    color: black;
+    }
+    
+    .brand{
+      max-width: 960px;
+      margin: 30px auto;
+      padding:  20px 30px;
+      box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    }
+    .brand h3{
+      text-align: center;
+    }
+    /* .commentor{
+      list-style-type: none;
+      padding: 0;
+      } */
+    .comment {
+      padding: 20px;
+      background: #f6f6f6;
+      font-size: 20px;
+      color: #555;
+      position: relative;
+      border-bottom: 1px solid #e6e6e6;
+      height: auto;
+      } 
+    /******************list ya message*/
+/* 
+.brand ul{
+list-style-type: none;
+padding: 0;
+}
+.brand ul li{
+padding: 20px;
+background: #f6f6f6;
+font-size: 20px;
+color: #555;
+position: relative;
+border-bottom: 1px solid #e6e6e6;
+height: auto;
+} */
+
