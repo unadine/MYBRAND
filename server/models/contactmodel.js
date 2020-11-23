@@ -4,11 +4,10 @@ const Schema = mongoose.Schema;
 // Creating schema and model
 
 const querySchema = new Schema ({
-    name : String,
-    email: String,
-    message : String
+    name : {type:String,required:true},
+    email: {type:String,required:true},
+    message : {type:String,required:true}
 })
 
-const queryChar = mongoose.model('query',querySchema);
 
-module.exports = queryChar;
+module.exports = mongoose.model('query',querySchema);

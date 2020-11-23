@@ -1,22 +1,21 @@
-const express = require("express")
-const Post = require("../models/contactmodel") 
-const router = express.Router()
+const express = require("express");
+const Post = require("../models/contactmodel");
+const router = express.Router();
+const queryCtrl= require("../controllers/contactcontroller");
+const validator = require("../Validation/contactvalidation");
+
 
 // Get all querries
-router.get("/query", async (req, res) => {
-	const posts = await Post.find()
-	res.send(posts)
-})
-// creating querries/messages
+router.get("/queries",queryCtrl.getAllQuerries);
+// getting a single query
+router.get('/queries/:id',queryCtrl.getOneQuery);
+// creating a query
+router.post("/queries",validator.queryvalidation,queryCtrl.createQuery);
+// deleting a blog
+router.delete("/queries/:id",queryCtrl.deletePost);
 
-router.post("/query", async (req, res) => {
-	const post = new Post({
-		name: req.body.name,
-        email: req.body.email,
-        message: req.body.message,
-	})
-	await post.save()
-	res.send(post)
-})
 
-module.exports = router
+module.exports = router;
+
+
+
