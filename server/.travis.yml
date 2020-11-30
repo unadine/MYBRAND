@@ -1,0 +1,23 @@
+
+language: node_js
+
+env:
+  - MONGO_URI_TEST=mongodb://localhost/test
+
+node_js:
+  - "stable"
+
+services:
+  - mongodb
+
+cache:
+  npm: false
+
+script:
+  - cd server/
+  - npm ci
+  - npm test
+  - npm run coverage
+
+after_success:
+  - npm run coveralls
