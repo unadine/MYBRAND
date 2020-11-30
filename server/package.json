@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": " nodemon index.js",
+    "test": "mocha --exit",
+    "coverage":"nyc npm test"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "@sideway/pinpoint": "^2.0.0",
     "bcrypt": "^5.0.0",
     "cloudinary": "^1.23.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-joi-validation": "^5.0.0",
     "joi": "^17.3.0",
@@ -26,6 +29,10 @@
     "validator": "^13.1.17"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0"
   }
 }

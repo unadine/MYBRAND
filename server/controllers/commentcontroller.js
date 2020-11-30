@@ -8,7 +8,7 @@ exports.createComment=(req, res, next) => {
 	});
     comment.save().then(
         () =>{
-            res.status(201).json({
+            res.status(200).json({
                 message:'Comment saved successfully'
             });
         }
@@ -29,6 +29,7 @@ exports.getAllComments = (req, res,next) => {
         (error) =>{
             res.status(400).json({
                 error:error
+                // message:"doesn't exist"
             });
         }
     );
