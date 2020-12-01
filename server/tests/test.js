@@ -54,7 +54,7 @@ describe('Blogs testing', () => {
         author: testPost.author,
         body: testPost.body
       })
-      .attach("picture", fs.readFileSync("test/img/dribble.png"), "dribble.png")
+      .attach("picture", fs.readFileSync("tests/img/dribble.png"), "dribble.png")
       .set("Authorization", token)
       .end((err, res) => {
         // console.log(res.body);
