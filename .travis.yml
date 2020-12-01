@@ -2,7 +2,7 @@
 language: node_js
 
 env:
-  - MONGO_URI_TEST=mongodb://localhost/test
+  - DATABASE_TEST=mongodb://localhost/testing
 
 node_js:
   - "stable"

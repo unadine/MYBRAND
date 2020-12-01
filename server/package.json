@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": " nodemon index.js",
-    "test": "mocha --exit",
-    "coverage": "nyc npm test"
+    "test": " mocha --exit",
+    "coverage": "nyc npm test",
+    "coveralls":"nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",

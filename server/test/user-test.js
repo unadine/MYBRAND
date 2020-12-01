@@ -19,22 +19,22 @@ const loginuser ={
     password: "test123" 
 
 }
-// describe('/signin user', () => {
+describe('/signin user', () => {
    
-//     it('it should not CREATE an existing user', async () => {
-//         const res = await chai.request(server).post("/api/auth/signup").send(testPost);
-//         expect(res.status).to.be.equal(500);
-//         expect(res).to.be.json;
-//         expect(res)
-//     });
+    it('it should not CREATE an existing user', async () => {
+        const res = await chai.request(server).post("/api/auth/signup").send(testPost);
+        expect(res.status).to.be.equal(500);
+        expect(res).to.be.json;
+        expect(res)
+    });
 
-// })
-// describe('/login a user', () => {
-//     it('it should LOGIN a user', async () => {
-//         const res = await chai.request(server).post("/api/auth/login").send(loginuser);
-//         expect(res.status).to.be.equal(200);
-//         expect(res).to.be.json;
-//         expect(res)
-//     });
-// })
+})
+describe('/login a user', () => {
+    it('it should LOGIN a user', async () => {
+        const res = await chai.request(server).post("/api/auth/login").send(loginuser);
+        expect(res.status).to.be.equal(200);
+        expect(res).to.be.json;
+        expect(res)
+    });
+})
 
