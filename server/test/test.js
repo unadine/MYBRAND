@@ -64,73 +64,7 @@ describe('Blogs testing', () => {
         done();
       });
   });
-  // it("should update a blog post", async () => {
-  //   const blogRes = await chai
-  //     .request(server)
-  //     .post("/api/blogs/:id")
-  //     .set("Authorization", token)
-  //     .field({
-  //       title: testPost.title,
-  //       author: testPost.author,
-  //       body: testPost.body
-  //     })
-  //     .attach("picture", fs.readFileSync("test/img/dribble.png"), "dribble.png");
-
-  //   const res = await chai
-  //     .request(server)
-  //     .put(`/api/blogs/${blogRes.body._id}`)
-  //     .set("Authorization", token)
-  //     .send(testPost);
-  //   expect(res.status).to.be.equal(200);
-  //   expect(res.body).to.have.property("message");
-  // });
-// });
-// describe('/POST blog', () => {
-//   it('it should  POST a blog ', (done) => {
-//     chai.request(server)
-//         .post('/api/blogs')
-//         .field({title:testPost.title,author:testPost.author,body:testPost.body}).attach('picture',fs.readFileSync('test/img/dribble.png'),'dribble.png')
-//         .set('Authorization',token)
-//         .end((err, res) => {
-//           console.log(res)
-//               res.should.have.status(201);
-//               res.body.should.be.a('object');
-//               res.body.should.have.property('message');
-//           done();
-//         });
-//   });
-
-// });
 });
-// describe("Blog  tests:", async () => {
-//   beforeEach(async () => {
-//     await Blog.deleteMany({});
-//   });
 
-//   afterEach(async () => {
-//     await Blog.deleteMany({});
-   
-//   });
-
-//   it("Should create a blog", async () => {
-//     const res = await chai
-//       chai.request(server)
-//       .post("/api/blogs")
-//       .set("Authorization", token)
-//       .field({
-//         title:testPost.title,
-//         author:testPost.author,
-//         body:testPost.body
-//       })
-//       .attach(
-//         'picture',
-//         fs.readFileSync('test/img/dribble.png'),
-//         'dribble.png'
-//       );
-//       console.log(res.body);
-//     expect(res.status).to.be.equal(201);
-//     expect(res.body).to.have.property("message");
-    
-//   });
 // });
 
