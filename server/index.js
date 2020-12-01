@@ -5,10 +5,11 @@ const blogroutes = require("./routes/blogroutes")
 const commentroutes = require("./routes/commentroute")
 const userroutes = require("./routes/userroute")
 const app = express()
-
+require('dotenv').config()
+const dbconnect = process.env.NODE_ENV==='test'? process.env.DATABASE_TEST:process.env.DATABASE_URL
 // Connect to MongoDB database
 mongoose
-	.connect("mongodb://localhost/test", { useNewUrlParser: true , useUnifiedTopology: true , useCreateIndex: true })
+	.connect(dbconnect, { useNewUrlParser: true , useUnifiedTopology: true , useCreateIndex: true })
 	.then(() => {
         app.use(express.json())
 		app.use("/api", contactroutes) 
