@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": " nodemon index.js",
-    "test": " NODE_ENV=test mocha  --exit",
+    "test": " NODE_ENV=test mocha ./src/tests/*.js --exit",
     "coverage": "nyc npm test",
     "coveralls":"nyc report --reporter=text-lcov | coveralls"
   },
