@@ -7,7 +7,7 @@
     "dev": " nodemon index.js",
     "test": " NODE_ENV=test mocha ./tests/*.js --exit",
     "coverage": "nyc npm test",
-    "coveralls":"nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",
