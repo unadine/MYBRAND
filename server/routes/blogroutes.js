@@ -144,21 +144,10 @@
  *                      type: string
  *     responses:
  *       200:
- *             description: Comment saved successfully
+ *             description: Blog saved successfully
  *       400:
  *             description: Bad request.
  * */
-
-
-
-
-
-
-
-
-
-
-
 
 const express = require("express")
 const Blog = require("../models/blogs") // new
