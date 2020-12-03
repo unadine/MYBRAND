@@ -18,7 +18,7 @@ signinForm.addEventListener('click', (e)=>{
     //signin users
     auth.signInWithEmailAndPassword(email, password).then(cred=>{
         console.log(cred)
-        window.location.href="../MYBRAND/Admin/create.html";
+        window.location.href="Admin/create.html";
         signinForm.reset();
     }).catch(error => {
         switch (error.code) {
