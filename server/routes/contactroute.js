@@ -18,7 +18,30 @@ const validator = require("../Validation/contactvalidation");
  *             description: Bad request.
  * */
 router.get("/queries",queryCtrl.getAllQuerries);
-// getting a single query
+
+/**
+ * @swagger
+ * /queries/{id}:
+ *   get:
+ *     tags:
+ *       - Queries
+ *     summary: retrieve single query
+ *     consumes:
+ *        - application/json
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *             description: query successfully Retrieved.
+ *       404:
+ *             description: query not found.
+ *       500:
+ *             description: server error.
+ * */
 router.get('/queries/:id',queryCtrl.getOneQuery);
 
 /**
