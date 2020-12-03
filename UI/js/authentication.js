@@ -23,7 +23,7 @@ signinForm.addEventListener('click', (e)=>{
     }).catch(error => {
         switch (error.code) {
            case 'auth/user-not-found':
-            alert('wrong email and password')
+            alert('wrong email and password');
              break;
            case 'auth/weak-password':
             alert('Password is not strong enough. Add additional characters including special characters and numbers.');
