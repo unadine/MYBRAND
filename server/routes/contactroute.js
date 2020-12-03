@@ -75,8 +75,30 @@ router.get('/queries/:id',queryCtrl.getOneQuery);
  *             description: Bad request.
  * */
 router.post("/queries",validator.queryvalidation,queryCtrl.createQuery);
-// deleting a blog
-router.delete("/queries/:id",queryCtrl.deletePost);
+
+/**
+ * @swagger
+ * /queries/{id}:
+ *   delete:
+ *     tags:
+ *       - Queries
+ *     summary: Delete a query
+ *     consumes:
+ *       - application/json
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *     responses:
+ *       200:
+ *             description: Successfully Deleted.
+ *       400:
+ *             description: Bad request.
+ *       401:
+ *             description: unauthorized
+ * */
+
+ router.delete("/queries/:id",queryCtrl.deletePost);
 
 
 module.exports = router;

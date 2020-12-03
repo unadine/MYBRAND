@@ -48,7 +48,30 @@ router.get("/comments",commentCtrl.getAllComments);
  *             description: Bad request.
  * */
 router.post("/comments",commentCtrl.createComment);
-// deleting a comment
+
+
+/**
+ * @swagger
+ * /comments/{id}:
+ *   delete:
+ *     tags:
+ *       - Comments
+ *     summary: Delete a comment
+ *     consumes:
+ *       - application/json
+ *     parameters:
+ *       - name: id
+ *         in: path
+ *         required: true
+ *     responses:
+ *       200:
+ *             description: Successfully Deleted.
+ *       400:
+ *             description: Bad request.
+ *       401:
+ *             description: unauthorized
+ * */
+
 router.delete("/comments/:id",commentCtrl.deleteComment);
 
 
