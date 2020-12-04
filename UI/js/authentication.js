@@ -18,12 +18,12 @@ signinForm.addEventListener('click', (e)=>{
     //signin users
     auth.signInWithEmailAndPassword(email, password).then(cred=>{
         console.log(cred)
-        window.location.href="../MYBRAND/Admin/create.html";
+        window.location.href="Admin/create.html";
         signinForm.reset();
     }).catch(error => {
         switch (error.code) {
            case 'auth/user-not-found':
-            alert('wrong email and password')
+            alert('wrong email and password');
              break;
            case 'auth/weak-password':
             alert('Password is not strong enough. Add additional characters including special characters and numbers.');
