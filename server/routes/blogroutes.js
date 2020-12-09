@@ -112,29 +112,28 @@
  *             description: unauthorized
  * */ 
  
-/**
+
+
+ /**
  * @swagger
- * /blogs/{id}:
- *   put:
+ * /blogs:
+ *   post:
  *     tags:
  *       - Blogs
  *     security: 
  *       - bearerAuth: []
- *     summary: updating a blog
- *     parameters:
- *            - name: id
- *              in: path
- *              required: true
+ *     summary: creating a blog
  *     requestBody:
  *        required: true
  *        content: 
- *           application/json:
+ *           multipart/form-data:
  *              schema:
  *                 type: object
  *                 required:
  *                    - title
  *                    - author
  *                    - body
+ *                    - picture
  *                 properties:
  *                    title:
  *                      type: string
@@ -142,12 +141,16 @@
  *                      type: string
  *                    body:
  *                      type: string
+ *                    picture:
+ *                      type: string
+ *                      format: binary
  *     responses:
- *       200:
+ *       201:
  *             description: Blog saved successfully
  *       400:
  *             description: Bad request.
  * */
+
 
 const express = require("express")
 const Blog = require("../models/blogs") // new
