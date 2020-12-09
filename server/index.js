@@ -7,7 +7,7 @@ const contactroutes = require("./routes/contactroute")
 const blogroutes = require("./routes/blogroutes")
 const commentroutes = require("./routes/commentroute")
 const userroutes = require("./routes/userroute")
-const {PORT,DB_URL,J}=require("./set-up/env")
+const {PORT,DB_URL}=require("./set-up/env")
 
 const app = express()
 app.use(cors())
