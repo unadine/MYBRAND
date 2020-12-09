@@ -6,13 +6,14 @@ let chai = require('chai');
 let chaiHttp = require('chai-http');
 let server = require('../index');
 const fs = require('fs');
+const helper = require('../helpers/userhelper')
 
 
 chai.should();
 chai.use(chaiHttp);
 const { should, have, expect} = chai;
 const { it, describe, beforeEach, afterEach } = mocha;
-const token = "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmJiYzc4N2RlZjYyOTllOTllYjk2OTIiLCJpYXQiOjE2MDY2MzUzNzJ9.g7j_SHMedjOd9qjmfuqKJ4BhxDmCyqBe-RKj6O5xPls"
+const token = `bearer ${helper.generateToken(1)}`
 let testPost = {
             title: "The Lord of the Rings ",
             author: "J.R.R. Tolkien",
