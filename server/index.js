@@ -10,7 +10,7 @@ const userroutes = require("./routes/userroute")
 const app = express()
 app.use(cors())
 require('dotenv').config()
-const dbUrl = process.env.NODE_ENV==='test'? process.env.DATABASE_TEST:process.env.DATABASE_URL
+const dbUrl = process.env.NODE_ENV==='test'? process.env.DATABASE_TEST:process.env.db_url
 // Connect to MongoDB database
 mongoose
 	.connect(dbUrl, { useNewUrlParser: true , useUnifiedTopology: true , useCreateIndex: true })
